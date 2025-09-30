@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA_DADDY</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Announcement-Bar -->
+        <div class="announcement-bar-wrapper">
+            <div class="announcement-bar">
+                <p>Free Shipping On All Orders Over $100</p>
+                <div class="top-announcement">
+                    <p><a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.0004 15.9201V18.9201C21.0016 19.1986 20.9445 19.4743 20.8329 19.7294C20.7214 19.9846 20.5577 20.2137 20.3525 20.402C20.1473 20.5902 19.905 20.7336 19.6412 20.8228C19.3773 20.912 19.0978 20.9452 18.8204 20.9201C15.7433 20.5857 12.7874 19.5342 10.1904 17.8501C7.77425 16.3148 5.72576 14.2663 4.19042 11.8501C2.5004 9.2413 1.44866 6.27109 1.12042 3.1801C1.09543 2.90356 1.1283 2.62486 1.21692 2.36172C1.30555 2.09859 1.44799 1.85679 1.63519 1.65172C1.82238 1.44665 2.05023 1.28281 2.30421 1.17062C2.5582 1.05843 2.83276 1.00036 3.11042 1.0001H6.11042C6.59573 0.995321 7.06621 1.16718 7.43418 1.48363C7.80215 1.80008 8.0425 2.23954 8.11042 2.7201C8.23704 3.68016 8.47187 4.62282 8.81042 5.5301C8.94497 5.88802 8.97408 6.27701 8.89433 6.65098C8.81457 7.02494 8.62928 7.36821 8.36042 7.6401L7.09042 8.9101C8.51398 11.4136 10.5869 13.4865 13.0904 14.9101L14.3604 13.6401C14.6323 13.3712 14.9756 13.1859 15.3495 13.1062C15.7235 13.0264 16.1125 13.0556 16.4704 13.1901C17.3777 13.5286 18.3204 13.7635 19.2804 13.8901C19.7662 13.9586 20.2098 14.2033 20.527 14.5776C20.8441 14.9519 21.0126 15.4297 21.0004 15.9201Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> </a></p>
+                    <p><a href="#">269-978-1983</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header>
+            <div class="page-width">
+                <div class="header-wrapper">
+                    <div class="header">
+                        <!-- Navigation -->
+                        <nav>
+                            <ul>
+                                <li><a href="#">POOL CHEMICALS</a></li>
+                                <li><a href="#">SPA CHEMICALS</a></li>
+                                <li><a href="#">FILTERS</a></li>
+                                <li><a href="#">ACCESSORIES</a></li>
+                                <li><a href="#">OUR SITE</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Logo -->
+                        <div class="header-logo">
+                            <a href="#"><img src="./assets/logo.png" alt="header-logo" width="152px" height="150px"></a>
+                        </div>
+                        <div class="right-side">
+                            <!-- Search-Bar -->
+                            <div class="search-bar">
+                                <input type="search" id="search-bar" placeholder="Search Here">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.93081 18.3616C14.587 18.3616 18.3616 14.587 18.3616 9.93081C18.3616 5.2746 14.587 1.5 9.93081 1.5C5.2746 1.5 1.5 5.2746 1.5 9.93081C1.5 14.587 5.2746 18.3616 9.93081 18.3616Z"
+                                        stroke="#262626" stroke-width="1.5" />
+                                    <path d="M15.8223 15.5312L21.7911 21.5001" stroke="#262626" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <!-- Icons -->
+                            <div class="icons">
+                                <svg width="27" height="30" viewBox="0 0 27 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3602_7261)">
+                                        <path
+                                            d="M21.75 28.5002H5.25C3.17893 28.5002 1.5 26.8212 1.5 24.7502C1.5 18.6291 10.5 18.7502 13.5 18.7502C16.5 18.7502 25.5 18.6291 25.5 24.7502C25.5 26.8212 23.821 28.5002 21.75 28.5002Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5 13.5C16.8137 13.5 19.5 10.8137 19.5 7.5C19.5 4.18629 16.8137 1.5 13.5 1.5C10.1863 1.5 7.5 4.18629 7.5 7.5C7.5 10.8137 10.1863 13.5 13.5 13.5Z"
+                                            stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3602_7261">
+                                            <rect width="27" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="add-to-card">
+                                    <path
+                                        d="M19 5.75C19 4.42392 18.4732 3.15215 17.5355 2.21447C16.5979 1.27678 15.3261 0.75 14 0.75C12.6739 0.75 11.4021 1.27678 10.4645 2.21447C9.52678 3.15215 9 4.42392 9 5.75M1.5 9.5H26.5L21.5 23.25H6.5L1.5 9.5Z"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Banner Section -->
+        <section>
+            <div class="banner-section ">
+                <!-- Banner Image -->
+                <div class="banner-img">
+                    <img src="./assets/banner-img.png" alt="Banner image" width="100%" height="100%">
+                    <!-- Banner frame -->
+                    <div class="banner-frame">
+                        <img src="assets/banner-frame.png" alt="banner-frame" width="100%" height="100%">
+                    </div>
+                </div>
+                <!-- Banner Content -->
+                <div class="banner-content">
+                    <!-- Banner Heading -->
+                    <div class="banner-heading">
+                        <h1>Sparkling <br>Clean Water</h1>
+                        <div class="banner-content-inner">
+                            <p class="set-para">Easy To Achieve..... </p>
+                            <div class="heading-left">
+                                <p class="set-para">Easy To Maintain.....</p>
+                            </div>
+                        </div>
+                        <!-- Banner Button -->
+                        <div class="buttons">
+                            <button class="primary">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider -->
+                <div class="slider">
+                    <button class="slider-left"><span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L1 7L7 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span></button>
+                    <button class="slider-right"><span><svg width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.2087L7 7.20874L1 1.20874" stroke="#262626" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></span></button>
+                </div>
+            </div>
+        </section>
+        <!-- Products Section-->
+        <section>
+            <div class="products layout">
+                <!-- Products Heading -->
+                <div class="products-heading">
+                    <h2>Shop Best Sellers</h2>
+                    <p><a href="#" class="view">View All</a></p>
+                </div>
+                <!-- Products Card Container -->
+                <div class="product-cards-container">
+                    <!-- Individual's Card Layout -->
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a href="#"><img src="assets/product-card-1.png" alt="product-card" width="100%"
+                                    height="100%"></a>
+                        </div>
+                        <div class="product-card-content">
+                            <h6 class="font-size font-color">Your products title here</h6>
+                            <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                        </div>
+                    </div>
+                    <!-- Individual's Card Layout -->
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a href="#"><img src="assets/product-card-2.png" alt="product-card" width="100%"
+                                    height="100%"></a>
+                        </div>
+                        <div class="product-card-content">
+                            <h6 class="font-size font-color">Your products title here</h6>
+                            <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                        </div>
+                    </div>
+                    <!-- Individual's Card Layout -->
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a href="#"><img src="assets/product-card-3.png" alt="product-card" width="100%"
+                                    height="100%"></a>
+                        </div>
+                        <div class="product-card-content">
+                            <h6 class="font-size font-color">Your products title here</h6>
+                            <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                        </div>
+                    </div>
+                    <!-- Individual's Card Layout -->
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a href="#"><img src="assets/product-card-4.png" alt="product-card" width="100%"
+                                    height="100%"></a>
+                        </div>
+                        <div class="product-card-content">
+                            <h6 class="font-size font-color">Your products title here</h6>
+                            <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                        </div>
+                    </div>
+                    <!-- Individual's Card Layout -->
+                    <div class="product-card">
+                        <div class="product-card-img">
+                            <a href="#"><img src="assets/product-card-1.png" alt="product-card" width="100%"
+                                    height="100%"></a>
+                        </div>
+                        <div class="product-card-content">
+                            <h6 class="font-size font-color">Your products title here</h6>
+                            <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <!-- Hero section Background -->
+            <div class="hero-section-background">
+                <!-- Hero section Background Image -->
+                <div class="hero-section-image">
+                    <img src="assets/hero section bg .png" alt="Holiday Sale Background" class="hero-bg-img">
+                    <!-- Hero section Content -->
+                    <div class="hero-section-content">
+                        <h3 class="hero-title">Holiday Sale Weekend</h3>
+                        <p class="hero-subtitle font-size">Spend $70 And Get A Free Bag Of Mini Products Worth $40.
+                        </p>
+                    </div>
+                    <div class="hero-section-countdown">
+                        <div class="countdown-upper">
+                            <div class="alingment">219
+                                <span class="countdown-lower">Days</span>
+                            </div>
+                            <div class="alingment">14
+                                <span class="countdown-lower">Hours</span>
+                            </div>
+                            <div class="alingment">55
+                                <span class="countdown-lower">Minutes</span>
+                            </div>
+                            <div class="alingment">34
+                                <span class="countdown-lower">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image with text -->
+        <section>
+            <div class="products layout">
+                <!-- Heading -->
+                <div class="products-heading">
+                    <h2>Shop The look</h2>
+                </div>
+                <!-- Background Image -->
+                <div class="image-with-image">
+                    <div class="image-with-img-text">
+                        <img src="assets/image-with-image-text.png" alt="image with img text" width="100%"
+                            height="100%">
+                    </div>
+                    <!-- Product Cards -->
+                    <div class="image-product-card">
+                        <div class="card">
+                            <div class="product-card-img">
+                                <img src="assets/Image Here.png" alt="product-card" width="100%" height="100%">
+                            </div>
+                            <div class="product-card-content">
+                                <h6 class="font-size font-color">Your products title here</h6>
+                                <h5 class="font-color"><span>$40.00</span> <span class="delete">$45.00</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form Section -->
+        <section class="contact-section">
+            <div class="data">
+                <h2 class="form-heading">Basic Information</h2>
+
+                <form action="#" id="contactForm">
+                    <div class="fields">
+
+                        <!-- First and Last Name -->
+                        <div class="row">
+                            <label>
+                                First Name*<br><br>
+                                <input type="text" name="firstName" id="firstName" required>
+                                <span id="name" class="error"></span>
+                            </label>
+                            <label>
+                                Last Name*<br><br>
+                                <input type="text" name="lastName" id="lastName" required>
+                                <span id="name" class="error"></span>
+                            </label>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="row full-width">
+                            <label>
+                                Email Address*<br><br>
+                                <input type="email" name="email" id="email" required>
+                                <span id="name" class="error"></span>
+                            </label>
+                        </div>
+
+                        <!-- Phone Number and Date Of Birth -->
+                        <div class="row">
+                            <label>
+                                Phone Number*<br><br>
+                                <input type="text" name="phone" id="phone" required>
+                                <span id="name" class="error"></span>
+                            </label>
+                            <label>
+                                Date of Birth*<br><br>
+                                <input type="date" name="birth" id="Birth" required>
+                                <span id="name" class="error"></span>
+                            </label>
+                        </div>
+
+                        <!-- Gender -->
+                        <div>
+                            <label>Gender:</label><br><br>
+                            <label><input type="radio" name="gender" value="Male" required> Male</label>
+                            <label><input type="radio" name="gender" value="Female"> Female</label>
+                            <label><input type="radio" name="gender" value="Other"> Other</label>
+
+                        </div>
+
+                        <!-- Hobbies -->
+                        <div>
+                            <label>Hobbies:</label><br><br>
+                            <div class="set-gap">
+
+                                <label><input type="checkbox" name="hobbies" value="Cricket"> Playing Cricket</label>
+                                <label><input type="checkbox" name="hobbies" value="TV"> Watching TV</label>
+                                <label><input type="checkbox" name="hobbies" value="Books"> Reading Books</label>
+                                <label><input type="checkbox" name="hobbies" value="Bike"> Riding Bike</label>
+                                <label><input type="checkbox" name="hobbies" value="Other"> Other</label>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="row full-width">
+                            <label>
+                                Message:<br><br>
+                                <textarea name="message" rows="4" placeholder="Enter your message here..."></textarea>
+                            </label>
+                        </div>
+
+                        <!-- Subscriptions -->
+                        <div class="full-width">
+                            <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label><br>
+                            <label><input type="checkbox" name="agree"> Agree to Terms & Conditions</label><br>
+                            <label><input type="checkbox" name="promotions"> Receive promotional offers</label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="row full-width">
+                            <button type="submit" class="submit">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <section>
+            <div class="footer-section-image">
+                <img src="assets/footer-image.jpg" alt="footer section bg" width="100%" height="420px">
+                <!-- Content -->
+                <div class="footer-section-content">
+                    <p>SIGNUP FOR</p>
+                    <h2>News And Coupons</h2>
+                    <p>Join our family and be the first to know about product </p>
+                </div>
+                <!-- Inner Content -->
+                <div class="footer-inner-content">
+                    <input type="email" placeholder="Your email" required id="footer-email">
+                    <button class="btn">Subscribe</button>
+                </div>
+                <!-- Image Rider -->
+                <div class="image-rider">
+                    <img src="assets/footer-ride.png" alt="footer" width="200px%" height="100%">
+                </div>
+            </div>
+        </section>
+        <!-- footer Section -->
+        <footer>
+            <div class="footer-bg">
+                <!-- Footer Background Image -->
+                <img src="assets/footer-bg-image.png" alt="footer-bg" width="100%" height="400px" />
+                <div class="footer-flex">
+                    <!-- Footer List Content -->
+                    <div class="footer-list-content">
+                        <!-- Footer logo -->
+                        <div class="footer-logo">
+                            <img src="assets/logo.png" alt="logo" width="100px" height="100px" />
+                        </div>
+                        <div>
+                            <p>
+                                <a href="tel:+919876543210" class="telto"> 269-978-1983</a>
+                                <br>
+                                Spa-Daddy, Inc., was founded in October 2002 to provide a secure shopping
+                                environment for high quality and low cost spa and pool products
+                            </p>
+                            <div class="footer-image-card">
+                                <img src="assets/bussiness.png" alt="card" width="100px" height="50px" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-list-content">
+                        <h5>SHOP</h5>
+                        <ul>
+                            <li><a href="#">Spa Filters</a></li>
+                            <li><a href="#">Filter Care</a></li>
+                            <li><a href="#">Swimming Pool Filters</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Spa Chemicals</a></li>
+                            <li><a href="#">Pool Chemicals</a></li>
+                            <li><a href="#">Crystal Clean Water</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list-content">
+                        <h5>INFORMATION</h5>
+                        <ul>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Wholesale w/ Shopify</a></li>
+                            <li><a href="#">Wholesale w/ Faire</a></li>
+                            <li><a href="#">Collabs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list-content">
+                        <h5>MY ACCOUNT</h5>
+                        <ul>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Contact Us!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-left">
+                    <img src="assets/umbrella.png" alt="umbrella" width="150px" height="150px" />
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer announcement bar -->
+        <section>
+            <div class="footer-announcement">
+                <div>
+                    <p>© 2023 Spadaddy All Rights Reserved.</p>
+                </div>
+                <div><img src="assets/Payment .png" alt="Payment" /></div>
+            </div>
+        </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
