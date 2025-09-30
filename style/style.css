@@ -107,6 +107,12 @@ nav ul {
     gap: 20px;
 }
 
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+
 nav ul li a {
     color: var(--text-color);
     text-decoration: none;
@@ -171,7 +177,11 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
+    width: 100%;
 }
+
+
 
 .icons svg {
     fill: none;
@@ -902,121 +912,3 @@ button.submit:hover {
     padding-right: 24px;
 }
 
-/* Responsive */
-/* Header */
-@media (max-width: 1300px) {
-    .header-logo {
-        position: static;
-        transform: none;
-        margin: 10px auto;
-    }
-
-    nav ul {
-        gap: 15px;
-    }
-
-    .search-bar {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .right-side {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-}
-
-@media (max-width: 1024px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-        background-color: var(--background-color);
-        padding: 10px 0;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-
-    .header-logo {
-        margin: 0 auto;
-    }
-
-    .icons {
-        margin-top: 10px;
-    }
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-    }
-
-    .menu-toggle svg {
-        stroke: var(--text-color);
-    }
-}
-
-/* Media Queries */
-@media (max-width: 1326px) {
-    .banner-heading h1 {
-        font-size: 48px;
-    }
-
-    .set-para {
-        font-size: 16px;
-    }
-
-    .banner-content {
-        top: 30%;
-        left: 5%;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner-content {
-        position: relative;
-        transform: none;
-        top: auto;
-        left: auto;
-        text-align: center;
-        margin: 16px;
-    }
-
-    .banner-heading h1 {
-        font-size: 32px;
-    }
-
-    .slider {
-        bottom: 10px;
-        right: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .banner-heading h1 {
-        font-size: 24px;
-    }
-
-    .set-para {
-        font-size: 14.4px;
-    }
-
-    .buttons .primary {
-        font-size: 14.4px;
-        padding: 8px 16px;
-    }
-}

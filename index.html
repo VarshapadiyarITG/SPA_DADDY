@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA_DADDY</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,6 +99,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="menu-toggle" style="display: none;">
+                        <i class="fa-regular fa-bars"></i>
+                    </div> -->
                 </div>
             </div>
         </header>
@@ -285,12 +289,10 @@
                             <label>
                                 First Name*<br><br>
                                 <input type="text" name="firstName" id="firstName" required>
-                                <span id="name" class="error"></span>
                             </label>
                             <label>
                                 Last Name*<br><br>
                                 <input type="text" name="lastName" id="lastName" required>
-                                <span id="name" class="error"></span>
                             </label>
                         </div>
 
@@ -299,7 +301,6 @@
                             <label>
                                 Email Address*<br><br>
                                 <input type="email" name="email" id="email" required>
-                                <span id="name" class="error"></span>
                             </label>
                         </div>
 
@@ -308,12 +309,10 @@
                             <label>
                                 Phone Number*<br><br>
                                 <input type="text" name="phone" id="phone" required>
-                                <span id="name" class="error"></span>
                             </label>
                             <label>
                                 Date of Birth*<br><br>
                                 <input type="date" name="birth" id="Birth" required>
-                                <span id="name" class="error"></span>
                             </label>
                         </div>
 
@@ -331,11 +330,11 @@
                             <label>Hobbies:</label><br><br>
                             <div class="set-gap">
 
-                                <label><input type="checkbox" name="hobbies" value="Cricket"> Playing Cricket</label>
-                                <label><input type="checkbox" name="hobbies" value="TV"> Watching TV</label>
-                                <label><input type="checkbox" name="hobbies" value="Books"> Reading Books</label>
-                                <label><input type="checkbox" name="hobbies" value="Bike"> Riding Bike</label>
-                                <label><input type="checkbox" name="hobbies" value="Other"> Other</label>
+                                <div><label><input type="checkbox" name="hobbies" value="Cricket"> Playing Cricket</label></div>
+                                <div><label><input type="checkbox" name="hobbies" value="TV"> Watching TV</label></div>
+                                <div><label><input type="checkbox" name="hobbies" value="Books"> Reading Books</label></div>
+                                <div><label><input type="checkbox" name="hobbies" value="Bike"> Riding Bike</label></div>
+                                <div><label><input type="checkbox" name="hobbies" value="Other"> Other</label></div>
                             </div>
                         </div>
 
