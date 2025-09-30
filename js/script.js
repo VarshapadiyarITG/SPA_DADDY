@@ -34,22 +34,20 @@ function checkValidGmail(email) {
 }
 
 // Name field ka validation
-function nameValidation(value, name) {
-    const error = document.getElementById(name);
-    error.innerText = "";
+function nameValidation(value) {
     value = value.trim();
 
     if (value.length === 0) return false;
 
     // Agar name chhota hai to error dikhaye
     if (value.length < 2) {
-        error.innerText = "Name is too short";
+        alert("Name is too short");
         return false;
     }
 
     // Name letter se start hona chahiye
     if (!startWithCharOrnot(value)) {
-        error.innerText = "Please enter a valid name";
+        alert("Please enter a valid name");
         return false;
     }
 
@@ -57,53 +55,25 @@ function nameValidation(value, name) {
 }
 
 // Email field ka validation
-function emailValidation(value, name) {
-    const error = document.getElementById(name);
-    error.innerText = "";
+function emailValidation(value) {
 
     if (value.length === 0) return false;
 
     if (!checkValidGmail(value)) {
-        error.innerText = "Please enter a valid email";
+        alert("Please enter a valid email");
         return false;
     }
 
     return true;
 }
-// Input change hone par real-time validation
-Array.from(inputs).forEach((ele) => {
-    ele.addEventListener("change", (event) => {
-        const value = event.target.value;
-        const name = event.target.name;
-
-        // Har input ke according uska validation
-        if (name === "name" && nameValidation(value, name)) {
-            data[name] = value;
-        } else if (name === "email" && emailValidation(value, name)) {
-            data[name] = value;
-        }
-
-    });
-});
 
 // Form submit hone par saare validations ek sath chalein
 form.addEventListener("submit", (event) => {
     event.preventDefault(); // Page reload na ho
-    const errorDesc = "This field is required";
-
     // Sabhi inputs check karte hain valid hain ya nahi
     const allValid = Array.from(inputs).every((ele) => {
         const value = ele.value;
         const name = ele.name;
-
-        const error = document.getElementById(name);
-        error.innerText = "";
-
-        // Agar field khaali hai to error show karo
-        if (value.trim().length === 0) {
-            error.innerText = errorDesc;
-            return false;
-        }
 
         // Individual validations
         if (name === "name") {
@@ -116,7 +86,7 @@ form.addEventListener("submit", (event) => {
                 data[name] = value;
                 return true;
             }
-        } 
+        }
 
         return false; // Agar koi validation fail ho to
     });
@@ -126,3 +96,9 @@ form.addEventListener("submit", (event) => {
         console.log("Validated Data:", data);
     }
 });
+
+
+
+
+
+
