@@ -1,6 +1,7 @@
 /* Responsive */
+
 /* Header */
-@media (max-width: 1300px) {
+ @media (max-width: 1300px) {
     .header-logo {
         position: static;
         transform: none;
@@ -51,7 +52,7 @@
 
     .icons {
         margin-top: 10px;
-    }
+    } 
 
     .menu-toggle {
         display: block;
@@ -66,7 +67,7 @@
     }
 }
 
-/* Media Queries */
+/* Banner */
 @media (max-width: 1326px) {
     .banner-heading h1 {
         font-size: 48px;
@@ -144,35 +145,6 @@
 }
 
 /* form */
-
-.contact-section {
-    padding: 20px;
-    margin: 40px auto;
-    width: 90%;
-    max-width: 800px;
-}
-
-.data {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.row label {
-    flex: 1 1 45%;
-}
-
-.row.full-width label {
-    flex: 1 1 100%;
-}
 
 @media (max-width: 600px) {
     .row label {

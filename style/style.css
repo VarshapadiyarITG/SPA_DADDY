@@ -88,16 +88,14 @@ header {
     justify-content: center;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
 .header {
     flex-wrap: wrap;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 /* Navigation */
@@ -106,12 +104,6 @@ nav ul {
     display: flex;
     gap: 20px;
 }
-
-nav ul li {
-    text-align: center;
-    width: 100%;
-}
-
 
 nav ul li a {
     color: var(--text-color);
@@ -136,10 +128,6 @@ nav ul li a:hover {
     top: -16px;
     z-index: 1;
     cursor: pointer;
-}
-
-.header {
-    position: relative;
 }
 
 /* Search Bar */
@@ -178,23 +166,10 @@ nav ul li a:hover {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    width: 100%;
 }
-
-
-
 .icons svg {
-    fill: none;
-    stroke: var(--text-color);
     margin-left: 20px;
-    cursor: pointer;
-    transition: stroke 0.3s;
 }
-
-.icons svg:hover {
-    stroke: var(--accent-color);
-}
-
 /* Banner Section  */
 .banner-section {
     margin-bottom: 80px;
@@ -327,7 +302,6 @@ nav ul li a:hover {
     letter-spacing: 1px;
 
 }
-
 
 .product-cards-container {
     display: flex;
@@ -487,56 +461,7 @@ nav ul li a:hover {
     line-height: 60px;
     letter-spacing: 0.8px;
     text-align: center;
-
 }
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-    .products-heading {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .products-heading p {
-        margin-top: 10px;
-    }
-
-    .product-cards-container {
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .product-card {
-        max-width: 90%;
-        flex: 1 1 90%;
-    }
-
-    .hero-section-content {
-        position: static;
-        max-width: 100%;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .hero-section-countdown {
-        position: static;
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-        min-width: auto;
-    }
-
-    .countdown-upper div,
-    .countdown-lower div {
-        font-size: 20px;
-    }
-}
-
-.layout {
-    margin: 0 7.9% 0 8%;
-}
-
 
 /* image with text */
 .products-heading h2 {
@@ -676,7 +601,6 @@ button.submit:hover {
     color: black;
 }
 
-/* Testiminial */
 /* footer-section */
 .footer-section-image {
     position: relative;
@@ -855,7 +779,6 @@ button.submit:hover {
 
 }
 
-
 .footer-list-content ul li a {
     text-decoration: none;
     color: rgba(38, 38, 38, 1);
@@ -911,4 +834,3 @@ button.submit:hover {
     height: 30px;
     padding-right: 24px;
 }
-
